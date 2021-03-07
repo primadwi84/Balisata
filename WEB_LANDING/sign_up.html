@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="sign_up.css">
+        <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+
+    <!-- Awal Isi Menu Sign In -->
+    <body>
+        <form action="sign_up.html" class="signup-form">
+            <h1>Sign Up</h1>
+
+            <div class="txtb">
+                <input type="text">
+                <span data-placeholder="First Name"></span>
+            </div>
+
+            <div class="txtb">
+                <input type="text">
+                <span data-placeholder="Last Name"></span>
+            </div>
+
+            <div class="txtb">
+                <input type="text">
+                <span data-placeholder="Username"></span>
+            </div>
+
+            <div class="txtb">
+                <input type="email">
+                <span data-placeholder="Email Adress"></span>
+            </div>
+
+            <div class="txtb">
+                <input type="password1">
+                <span data-placeholder="Password"></span>
+            </div>
+
+            <div class="txtb">
+                <input type="password2">
+                <span data-placeholder="Re-Write Password"></span>
+            </div>
+            <input type="submit" class="signupbtn" value="Sign Up">
+
+     
+
+        </form>
+    <!-- Akhir Isi Menu Sign Up -->
+
+        <!-- Awal Linear Gradien -->
+        <script type="text/javascript">
+            $(".txtb input").on("focus",function(){
+                $(this).addClass("focus");
+            });
+
+            $(".txtb input").on("blur",function(){
+                if($(this).val()== "")
+                $(this).removeClass("focus");
+            });
+        
+        </script>
+        <!-- Akhir Linear Gradien -->
+
+
+    </body>
+  ...
+</html>

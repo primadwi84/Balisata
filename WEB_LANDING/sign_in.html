@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sign In</title>
+        <link rel="stylesheet" href="sign_in.css">
+        <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+
+    <!-- Awal Isi Menu Sign In -->
+    <body>
+        <form action="sign_in.html" class="signin-form">
+            <h1>Sign In</h1>
+
+            <div class="txtb">
+                <input type="text">
+                <span data-placeholder="Username"></span>
+            </div>
+
+            <div class="txtb">
+                <input type="password">
+                <span data-placeholder="Password"></span>
+            </div>
+
+            <input type="submit" class="signinbtn" value="Sign in">
+
+            <div class="bottom-text">
+                Don't have account? <a href="sign_up.html">Sign up</a>
+            </div>
+
+        </form>
+    <!-- Akhir Isi Menu Sign In -->
+
+        <!-- Awal Linear Gradien -->
+        <script type="text/javascript">
+            $(".txtb input").on("focus",function(){
+                $(this).addClass("focus");
+            });
+
+            $(".txtb input").on("blur",function(){
+                if($(this).val()== "")
+                $(this).removeClass("focus");
+            });
+        
+        </script>
+        <!-- Akhir Linear Gradien -->
+
+
+    </body>
+  ...
+</html>
